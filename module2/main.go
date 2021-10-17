@@ -24,5 +24,5 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", IndexHandler)
 	http.HandleFunc("/healthz", Healthz)
-	http.ListenAndServe(":8000", nil)
+	http.ListenAndServe(":80", nil)
 }
